@@ -1,0 +1,17 @@
+# Find the sum of the even valued Fibonaci numbers while the total sum of the fibonaci numbers is less than 4000000
+
+
+x = 1
+z = 1
+y = 1
+y1 = 0
+i = 0
+while y1 < 4000000:
+    y2 = y1 + y
+    y = y1
+    y1 = y2
+    x +=y2
+    if y2%2 == 0:
+        z += y2
+print(x)   
+print(z)
